@@ -45,7 +45,7 @@ function whoIsUser1() {
       src="https://media1.tenor.com/m/ws3kwe64uTAAAAAd/watson-no-shit-sherlock.gif"
       alt=""
     /> <br>
-          <a href="index.html">			<button class="border-none border hover:scale-95 duration-300 relative group cursor-pointer text-black  overflow-hidden h-16 w-64 rounded-md bg-emerald-200 p-2 flex justify-center items-center font-extrabold">
+          <a href="https://rig-generator.vercel.app/">			<button class="border-none border hover:scale-95 duration-300 relative group cursor-pointer text-black  overflow-hidden h-16 w-64 rounded-md bg-emerald-200 p-2 flex justify-center items-center font-extrabold">
 
               <div class="absolute right-32 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-emerald-900"></div>
               <div class="absolute right-2 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150  duration-500 bg-emerald-800"></div>
