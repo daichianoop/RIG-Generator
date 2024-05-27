@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.RIG {
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  animation: copyrightt infinite forwards 5s;
+}
+@keyframes copyrightt {
+  0% {
+    color: #52b788;
+  }
+  25% {
+    color: gray;
+  }
+  50% {
+    color: #52b788;
+  }
+  75% {
+    color: gray;
+  }
+  100% {
+    color: #52b788;
+  }
+}

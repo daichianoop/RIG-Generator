@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIG - Image Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .overflow-scroll::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body
+    class="text-green-50 bg-black bg-opacity-95 overflow-scroll scroll-smooth"
+  >
+    <nav
+      class="bg-zinc-900 flex justify-between items-center fixed right-0 left-0 border-b-2 border-zinc-800"
+    >
+      <div class="RIG ml-3 items-center text-xl">RIG Generator</div>
+      <div class="flex text-center">
+        <a href="index.html">
+          <div
+            id="regenerate"
+            class="px-7 py-3 hover:bg-zinc-950 cursor-pointer text-emerald-500"
+          >
+            ReGenerate
+          </div>
+        </a>
+        <a href="#originalImages">
+          <div class="px-7 py-3 hover:bg-zinc-950 cursor-pointer">Home</div>
+        </a>
+        <a href="#about">
+          <div class="px-7 py-3 hover:bg-zinc-950 cursor-pointer">About</div>
+        </a>
+        <div
+          onclick="whoIsUser1()"
+          class="px-7 py-3 hover:bg-zinc-950 cursor-pointer border-l"
+        >
+          User1
+        </div>
+      </div>
+    </nav>
+    <div
+      id="warning"
+      class="fixed text-xs flex p-2 left-0 top-12 right-0 bg-zinc-900"
+    >
+      <div>
+        It is important to acknowledge that certain images may not be visible
+        due to removal by the user. Click on the
+        <span class="RIG">"X"</span> icon to remove this pop-up.
+      </div>
+      <div class="ml-5">
+        <button onclick="remove()"><p class="RIG font-bold">X</p></button>
+      </div>
+    </div>
+    <section
+      id="originalImages"
+      class="grid gap-y-3 grid-cols-3 pt-20 px-4 items-center justify-center"
+    >
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+      <div
+        class="imageContainer p-1 mx-2 items-center justify-center flex shadow-md shadow-zinc-600 w-96 h-64 bg-zinc-800"
+      >
+        <img src="" alt="" />
+      </div>
+    </section>
+    <section class="flex items-center justify-center py-10">
+      <div>
+        <button
+          id="loadMore"
+          class="relative border-none hover:border-black duration-500 group cursor-pointer text-black overflow-hidden h-14 w-56 rounded-md bg-emerald-800 p-2 flex justify-center items-center font-extrabold"
+        >
+          <div
+            class="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-emerald-900 delay-150 group-hover:delay-75"
+          ></div>
+          <div
+            class="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-emerald-800 delay-150 group-hover:delay-100"
+          ></div>
+          <div
+            class="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-emerald-700 delay-150 group-hover:delay-150"
+          ></div>
+          <div
+            class="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-emerald-600 delay-150 group-hover:delay-200"
+          ></div>
+          <div
+            class="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-emerald-500 delay-150 group-hover:delay-300"
+          ></div>
+          <p class="z-10">Load More</p>
+        </button>
+      </div>
+    </section>
+    <section
+      id="about"
+      class="bg-zinc-900 pb-10 border-t-2 pt-5 px-7 border-zinc-800"
+    >
+      <span class="text-2xl">About</span><br />This is a
+      <span class="RIG">GENERATIVE WEBSITE</span> project made by
+      <span class="RIG"> User1</span> to showcase Javascript Element Integration
+      using <span class="RIG">appendChild();</span> function. <br />The source
+      of all the media id
+      <a href="https://picsum.photos/" class="RIG">Lorem Picsum</a>.
+    </section>
+    <script src="script.js"></script>
+
+    
+  </body>
+</html>
